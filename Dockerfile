@@ -26,7 +26,7 @@ RUN rm -vf /var/log/nginx/* && rm -rf /etc/nginx/conf.d/default.conf \
 RUN apk update && apk add ca-certificates && rm -rf /var/cache/apk/* 
 RUN update-ca-certificates
 
-USER 101
+USER 0
 
 EXPOSE 80
 
